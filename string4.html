@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		let possibleCombinations = (str) =>{
+			let combinations = [];
+				for(let i = 0; i < str.length; i++)
+		{
+			for(let j = i + 1; j< str.length + 1; j++)
+			{
+				combinations.push(str.slice(i , j));
+			}
+		}
+		return combinations;
+		}
+		document.write(possibleCombinations('Dog'));
+	</script>
+
+</body>
+</html>
